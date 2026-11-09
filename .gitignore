@@ -1,0 +1,19 @@
+
+# APIキーなどの秘密情報
+.env
+.env.*
+
+# インストールしたライブラリ
+node_modules/
+
+# ログファイル
+*.log
+
+# Macの管理ファイル
+.DS_Store
+
+# 開発用プログラム
+/tarot-generator/
+
+# 開発用SQL・メモ
+/GET_TAROT-READING*

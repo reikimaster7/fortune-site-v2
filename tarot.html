@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タロット占い | Fortune Garden</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="supabase-config.js" defer></script>
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+
+  <header>
+    <h1>🔮 タロット占い</h1>
+    <p>3枚のカードがあなたの過去・現在・未来を映し出します</p>
+  </header>
+
+  <main>
+    <section class="tarot-section">
+      <h2>占いたいテーマを選んでください</h2>
+
+      <label for="categorySelect">占いカテゴリー</label>
+      <select id="categorySelect" required>
+        <option value="">選択してください</option>
+        <option value="恋愛">❤️ 恋愛</option> 
+        <option value="仕事">💼 仕事</option>
+        <option value="人生全般">🌿 人生全般</option>
+        <option value="スピリチュアル">🔮 スピリチュアル</option>
+      </select>
+
+
+
+      <button id="drawBtn" type="button">
+        🃏 カードを3枚引く
+      </button>
+    </section>
+
+    <section id="resultSection" hidden>
+      <h2>あなたのタロットカード</h2>
+      <div id="cardResults" class="card-results"></div>
+
+      <h2>総合鑑定</h2>
+      <div id="readingResult" class="reading-result"
+           aria-live="polite"></div>
+    </section>
+
+    <p class="back-link">
+      <a href="index.html">← 占いメニューに戻る</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>© Fortune Garden</p>
+  </footer>
+
+</body>
+</html>
