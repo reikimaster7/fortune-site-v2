@@ -1017,3 +1017,23 @@ body:has(.one-card-results) .reading-part h3 {
     line-height: 2;
   }
 }
+
+
+
+
+/* ===================================
+   公開準備：Coming Soon
+=================================== */
+
+.coming-soon {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.coming-soon-label {
+  margin-top: 18px !important;
+  color: #f4d58d !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
